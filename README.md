@@ -1,13 +1,13 @@
 # Reshaper
 
-Reshaper turns a photo into a restyled version of itself, an ink-line sticker, a boxed collectible figure, a stained-glass portrait, a LEGO minifigure, and more, using your own Gemini or OpenAI API key. No shared key, no accounts, no build step, no npm dependencies.
+Reshaper turns a photo into a restyled version of itself, an ink-line sticker, a boxed collectible figure, a stained-glass portrait, a LEGO minifigure, and more, using your own Gemini or ChatGPT API key. No shared key, no accounts, no build step, no npm dependencies.
 
 ![Reshaper screenshot](images/screenshot.jpg)
 
 ## Features
 
 - **A growing library of styles across several categories** (Doodle & Sketch, 3D & Figure, Material, Comic & Pop Art, Fine Art & Painting, Digital & Retro-Tech, Photo Effects, and more as they're added), filterable from the front page.
-- **Bring your own API key** — Gemini or OpenAI, entered client-side, forwarded per-request, never written to disk. No shared/server-stored key, no billing.
+- **Bring your own API key** — Gemini or ChatGPT, entered client-side, forwarded per-request, never written to disk. No shared/server-stored key, no billing.
 - **Before/after comparison slider** on the result, drag to compare the original and restyled photo.
 - **Customize prompt** — an opt-in panel to see and edit the exact instruction sent to the model before generating, without changing what's saved for other visitors.
 - **Admin panel** (`/admin`) — add, edit, reorder, and delete styles and categories without touching code. Styles are stored in a JSON file, not a database.
