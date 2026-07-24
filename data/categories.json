@@ -1,0 +1,51 @@
+[
+  {
+    "id": "4ed760a1-09f7-4274-aa0d-83a30ca389db",
+    "name": "Doodle & Sketch",
+    "order": 0,
+    "createdAt": "2026-07-24T10:21:33.596Z",
+    "updatedAt": "2026-07-24T10:21:33.596Z"
+  },
+  {
+    "id": "38d3befa-39e5-47d4-bf0b-a140792b2ac3",
+    "name": "3D & Figure",
+    "order": 1,
+    "createdAt": "2026-07-24T10:21:33.596Z",
+    "updatedAt": "2026-07-24T10:21:33.596Z"
+  },
+  {
+    "id": "6ad0a676-4347-4eb6-9db1-7b3938f373ae",
+    "name": "Material",
+    "order": 2,
+    "createdAt": "2026-07-24T10:27:28.553Z",
+    "updatedAt": "2026-07-24T10:27:28.553Z"
+  },
+  {
+    "id": "89d3d50f-6ef4-437c-95c0-c799f8fb6440",
+    "name": "Comic & Pop Art",
+    "order": 3,
+    "createdAt": "2026-07-24T10:32:39.462Z",
+    "updatedAt": "2026-07-24T10:32:39.462Z"
+  },
+  {
+    "id": "d7f9ac70-0439-42da-b4c2-10a929998ad8",
+    "name": "Fine Art & Painting",
+    "order": 4,
+    "createdAt": "2026-07-24T10:32:39.465Z",
+    "updatedAt": "2026-07-24T10:32:39.465Z"
+  },
+  {
+    "id": "d1c0c307-f729-4b82-863c-76b25cb2a890",
+    "name": "Digital & Retro-Tech",
+    "order": 5,
+    "createdAt": "2026-07-24T10:32:39.467Z",
+    "updatedAt": "2026-07-24T10:32:39.467Z"
+  },
+  {
+    "id": "aab9b995-1170-4176-a8c5-2d6748caf430",
+    "name": "Photo Effects",
+    "order": 6,
+    "createdAt": "2026-07-24T10:32:39.469Z",
+    "updatedAt": "2026-07-24T10:32:39.469Z"
+  }
+]

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reshaper — Admin</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <main class="shell admin-shell">
+    <div class="admin-page" id="dashboardPage">
+      <header class="admin-header">
+        <a class="brand" href="/"><span class="mark"></span> Reshaper Admin</a>
+        <div class="header-actions">
+          <a class="settings-button" href="/"><img class="back-icon" src="images/chevron-left.png" alt="" aria-hidden="true">Back to studio</a>
+          <a class="settings-button" href="/#settings">API settings</a>
+        </div>
+      </header>
+
+      <nav class="admin-tabs">
+        <button class="admin-tab active" type="button" id="stylesTabButton">Styles</button>
+        <button class="admin-tab" type="button" id="categoriesTabButton">Categories</button>
+      </nav>
+
+      <div class="admin-toolbar">
+        <h1>Styles</h1>
+        <button class="btn-primary" id="addStyleButton" type="button" style="border:0;padding:12px 18px;text-transform:uppercase;font-size:12px;font-weight:700;letter-spacing:.05em;cursor:pointer;">Add style</button>
+      </div>
+
+      <table class="style-table">
+        <thead>
+          <tr>
+            <th class="reorder-column">Reorder</th>
+            <th>Image</th>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Identity mode</th>
+            <th>Enabled</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="styleTableBody"></tbody>
+      </table>
+      <p class="style-list-status" id="styleListStatus" role="status" aria-live="polite"></p>
+    </div>
+
+    <div class="admin-page" id="styleEditPage" hidden>
+      <header class="admin-header">
+        <a class="brand" href="/"><span class="mark"></span> Reshaper Admin</a>
+        <div class="header-actions">
+          <a class="settings-button" href="/"><img class="back-icon" src="images/chevron-left.png" alt="" aria-hidden="true">Back to studio</a>
+          <a class="settings-button" href="/#settings">API settings</a>
+          <button class="settings-button" id="backToStylesButton">← Back to styles</button>
+        </div>
+      </header>
+
+      <form class="style-form" id="styleForm">
+        <h2 id="styleFormTitle">Add style</h2>
+        <p class="hint">The prompt is sent directly to the image model — write it as a full instruction, not a short label.</p>
+        <label class="field-block">Title
+          <input id="styleTitleInput" type="text" required maxlength="60">
+        </label>
+        <label class="field-block">Prompt
+          <textarea id="stylePromptInput" required></textarea>
+        </label>
+        <label class="field-block">Category
+          <select id="styleCategorySelect">
+            <option value="">None</option>
+          </select>
+        </label>
+        <label class="field-block">Identity mode
+          <select id="styleIdentitySelect">
+            <option value="reinforced">Reinforced — keep the person recognizable through the stylization (most styles)</option>
+            <option value="generic">Generic — light preservation, minimal restyle (filters, subtle looks)</option>
+            <option value="none">None — no likeness required (mascot/chibi looks)</option>
+          </select>
+        </label>
+        <label class="field-block">Feature image
+          <input id="styleImageInput" type="file" accept="image/*">
+        </label>
+        <div class="image-preview-row">
+          <img class="image-preview" id="styleImagePreview" alt="Feature image preview" hidden>
+          <span class="hint" id="styleImageHint">Used as the style's swatch on the public page.</span>
+        </div>
+        <p class="form-error" id="styleFormError" role="status"></p>
+        <p class="form-success" id="styleFormSuccess" role="status"></p>
+        <div class="form-actions">
+          <button class="btn-primary" type="submit">Save style</button>
+          <button class="btn-secondary" type="button" id="cancelStyleForm">Cancel</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="admin-page" id="categoriesPage" hidden>
+      <header class="admin-header">
+        <a class="brand" href="/"><span class="mark"></span> Reshaper Admin</a>
+        <div class="header-actions">
+          <a class="settings-button" href="/"><img class="back-icon" src="images/chevron-left.png" alt="" aria-hidden="true">Back to studio</a>
+          <a class="settings-button" href="/#settings">API settings</a>
+        </div>
+      </header>
+
+      <nav class="admin-tabs">
+        <button class="admin-tab" type="button" id="stylesTabButtonFromCategories">Styles</button>
+        <button class="admin-tab active" type="button" id="categoriesTabButtonActive">Categories</button>
+      </nav>
+
+      <form class="add-category-form" id="addCategoryForm">
+        <h1>Categories</h1>
+        <input id="newCategoryNameInput" type="text" maxlength="60" placeholder="New category name" required>
+        <button class="btn-primary" type="submit">Add category</button>
+      </form>
+      <p class="form-error" id="categoryFormError" role="status"></p>
+
+      <table class="style-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Styles</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="categoryTableBody"></tbody>
+      </table>
+      <p class="style-list-status" id="categoryListStatus" role="status" aria-live="polite"></p>
+    </div>
+  </main>
+
+  <script src="admin.js" defer></script>
+</body>
+</html>

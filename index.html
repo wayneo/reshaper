@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reshaper — AI Photo Restyling</title>
+  <meta name="description" content="A simple interactive demo for Reshaper, an AI photo restyling app.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <a class="brand" href="/"><span class="mark"></span> Reshaper</a>
+      <div class="header-actions">
+        <a class="settings-button" href="/admin">Edit Styles</a>
+        <button class="settings-button" id="settingsButton" aria-label="Open API settings">API settings&nbsp; ↗</button>
+        <button class="settings-button" id="backButton" hidden><img class="back-icon" src="images/chevron-left.png" alt="" aria-hidden="true">Back to studio</button>
+      </div>
+    </header>
+
+    <section class="hero page" id="createPage">
+      <aside class="source-column">
+        <p class="workspace-step">01 Source</p>
+        <div class="upload-row">
+          <div class="selection-previews">
+            <div class="upload-source">
+              <label class="thumb" id="stage">
+                <span class="thumb-empty-content" id="emptyState">
+                  <img class="thumb-icon" src="images/image-up.png" alt="">
+                  <span class="thumb-empty-title">Upload Photo</span>
+                </span>
+                <img id="preview" alt="Uploaded photo preview" hidden>
+                <input class="thumb-input" id="photoInput" name="photo" type="file" accept="image/png,image/jpeg,image/webp" aria-describedby="uploadHelp uploadStatus">
+              </label>
+              <p class="upload-hint" id="uploadHelp">PNG, JPG, WebP<br>Max 12 MB</p>
+              <p class="upload-status" id="uploadStatus" role="status"></p>
+            </div>
+            <div class="selected-style-preview" id="selectedStylePreview" hidden>
+              <img id="selectedStylePreviewImage" alt="">
+              <span class="selected-style-caption"><b>Style</b><span id="selectedStylePreviewName"></span></span>
+            </div>
+          </div>
+
+        </div>
+      </aside>
+
+      <section class="styles-column" aria-label="Choose a style">
+        <p class="workspace-step">02 Choose a Style</p>
+        <div class="category-filters" id="categoryFilters" role="group" aria-label="Filter styles by category" hidden></div>
+        <div class="styles" id="styles" aria-live="polite"></div>
+      </section>
+
+      <aside class="result-column">
+        <p class="workspace-step">03 Result</p>
+        <div class="prompt-customize" id="promptCustomize" hidden>
+          <button class="prompt-toggle" id="promptToggleButton" type="button" aria-expanded="false">Customize prompt</button>
+          <textarea class="prompt-textarea" id="promptTextarea" hidden maxlength="4000" aria-label="Style prompt (editable)"></textarea>
+        </div>
+        <div class="action-row">
+          <button class="generate" id="generateButton" disabled>Generate image</button>
+        </div>
+
+        <div class="studio">
+          <div class="result-stage" id="resultStage">
+          <div class="empty" id="resultEmpty">
+            <strong>Your result <br>appears here</strong>
+            <p>Add a photo, choose a style, then generate.</p>
+          </div>
+          <div class="result-error" id="resultError" role="alert" hidden></div>
+          <img id="resultImage" alt="AI-restyled result" hidden>
+          <div class="comparison" id="comparison" hidden style="--comparison-position: 50%;">
+            <img class="comparison-image" id="comparisonBefore" alt="Original uploaded photo">
+            <div class="comparison-after" id="comparisonAfter">
+              <img class="comparison-image" id="comparisonAfterImage" alt="AI-restyled result">
+            </div>
+            <span class="comparison-label comparison-label-before">Original</span>
+            <span class="comparison-label comparison-label-after">Generated</span>
+            <span class="comparison-divider" aria-hidden="true"></span>
+            <input class="comparison-range" id="comparisonRange" type="range" min="0" max="100" value="50" aria-label="Compare original and generated image">
+          </div>
+          <div class="result-actions" id="resultActions" hidden>
+            <button class="icon-button" id="downloadButton" aria-label="Download generated image" title="Download"><img class="result-icon" src="images/image-down.png" alt="" aria-hidden="true"></button>
+            <button class="icon-button" id="shareButton" aria-label="Share generated image" title="Share"><img class="result-icon" src="images/share-2.png" alt="" aria-hidden="true"></button>
+          </div>
+          <div class="loader" id="loader" role="status" aria-live="polite"><div><div class="loader-ring"></div><span>Reshaping your moment…</span><small>Usually under a minute</small></div></div>
+          </div>
+        </div>
+      </aside>
+    </section>
+    <section class="settings-page page" id="settingsPage" hidden>
+      <div class="settings-hero">
+        <div class="settings-copy">
+          <h2>Connect your creative engine.</h2>
+          <p>Bring your own Gemini or OpenAI API key. You remain responsible for usage and charges billed by the provider.</p>
+          <div class="security-note"><strong>Privacy note</strong><br>This testing build stores keys in this tab's browser session so they survive reloads. Keys are forwarded through the local backend, never written to disk, and cleared when the browser session ends.</div>
+        </div>
+        <form class="settings-panel" id="apiForm">
+          <div class="panel-title"><h3>Model connection</h3><span class="status" id="connectionStatus">Not connected</span></div>
+          <div class="providers" id="providers">
+            <button class="provider active" type="button" data-provider="Gemini"><strong>Gemini</strong><small>Nano Banana image models</small></button>
+            <button class="provider" type="button" data-provider="OpenAI"><strong>OpenAI</strong><small>GPT Image models</small></button>
+          </div>
+          <label class="field">Image model
+            <select id="modelSelect" aria-label="Image generation model"></select>
+            <span class="help" id="modelHelp"></span>
+          </label>
+          <label class="field">Image quality
+            <select id="qualitySelect" aria-label="Image quality"></select>
+            <span class="help" id="qualityHelp"></span>
+          </label>
+          <label class="field"><span id="keyLabel">Gemini API key</span>
+            <div class="field-wrap"><input id="apiKey" type="password" placeholder="AIza…" autocomplete="off" required><button class="reveal" id="revealKey" type="button">Show</button></div>
+            <span class="help">Your key is never included in exported images or analytics.</span>
+          </label>
+          <div class="settings-actions"><button class="test" id="testButton" type="button">Test connection</button><button class="save" type="submit">Save settings</button></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
