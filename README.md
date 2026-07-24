@@ -6,7 +6,7 @@ Reshaper turns a photo into a restyled version of itself, an ink-line sticker, a
 
 ## Features
 
-- **32 styles across 7 categories** (Doodle & Sketch, 3D & Figure, Material, Comic & Pop Art, Fine Art & Painting, Digital & Retro-Tech, Photo Effects), filterable from the front page.
+- **A growing library of styles across several categories** (Doodle & Sketch, 3D & Figure, Material, Comic & Pop Art, Fine Art & Painting, Digital & Retro-Tech, Photo Effects, and more as they're added), filterable from the front page.
 - **Bring your own API key** — Gemini or OpenAI, entered client-side, forwarded per-request, never written to disk. No shared/server-stored key, no billing.
 - **Before/after comparison slider** on the result, drag to compare the original and restyled photo.
 - **Customize prompt** — an opt-in panel to see and edit the exact instruction sent to the model before generating, without changing what's saved for other visitors.
