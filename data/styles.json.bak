@@ -6,9 +6,9 @@
     "identityMode": "reinforced",
     "imageFile": "673dc3a2-55c3-47cf-87b5-8faf529fe4eb.jpg",
     "enabled": true,
-    "order": 1,
+    "order": 34,
     "createdAt": "2026-07-20T00:00:00.000Z",
-    "updatedAt": "2026-07-24T10:15:29.803Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "4ed760a1-09f7-4274-aa0d-83a30ca389db"
   },
   {
@@ -18,9 +18,9 @@
     "identityMode": "reinforced",
     "imageFile": "01c5afa9-cbdd-45ed-80fb-83f79846b7be.jpg",
     "enabled": true,
-    "order": 2,
+    "order": 35,
     "createdAt": "2026-07-20T00:00:00.000Z",
-    "updatedAt": "2026-07-24T10:32:39.515Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "aab9b995-1170-4176-a8c5-2d6748caf430"
   },
   {
@@ -30,9 +30,9 @@
     "identityMode": "reinforced",
     "imageFile": "082bb4da-be46-4662-885b-24c51894b26a.jpg",
     "enabled": true,
-    "order": 3,
+    "order": 36,
     "createdAt": "2026-07-20T00:00:00.000Z",
-    "updatedAt": "2026-07-24T10:26:56.297Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "38d3befa-39e5-47d4-bf0b-a140792b2ac3"
   },
   {
@@ -42,9 +42,9 @@
     "identityMode": "reinforced",
     "imageFile": "ef9e3d7f-e8d5-4d9e-b4b9-f8e0e392fcb4.jpg",
     "enabled": true,
-    "order": 4,
+    "order": 37,
     "createdAt": "2026-07-20T00:00:00.000Z",
-    "updatedAt": "2026-07-24T10:27:50.815Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "6ad0a676-4347-4eb6-9db1-7b3938f373ae"
   },
   {
@@ -54,9 +54,9 @@
     "identityMode": "reinforced",
     "imageFile": "80de85fe-f371-4fab-8104-a69f9c30d881.jpg",
     "enabled": true,
-    "order": 5,
+    "order": 38,
     "createdAt": "2026-07-20T00:00:00.000Z",
-    "updatedAt": "2026-07-24T10:32:39.517Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "aab9b995-1170-4176-a8c5-2d6748caf430"
   },
   {
@@ -66,9 +66,9 @@
     "identityMode": "none",
     "imageFile": "c78487e9-7719-4c13-98a1-d06b486aa074.jpg",
     "enabled": true,
-    "order": 6,
+    "order": 39,
     "createdAt": "2026-07-20T00:00:00.000Z",
-    "updatedAt": "2026-07-24T10:27:43.986Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "6ad0a676-4347-4eb6-9db1-7b3938f373ae"
   },
   {
@@ -78,9 +78,9 @@
     "identityMode": "reinforced",
     "imageFile": "393473fa-5baa-4186-ab7b-352bb321c95f.jpg",
     "enabled": true,
-    "order": 7,
+    "order": 40,
     "createdAt": "2026-07-20T00:00:00.000Z",
-    "updatedAt": "2026-07-24T10:32:39.475Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "4ed760a1-09f7-4274-aa0d-83a30ca389db"
   },
   {
@@ -90,9 +90,9 @@
     "identityMode": "reinforced",
     "imageFile": "c0f8198d-8791-46fd-b035-b376b77eda9f.jpg",
     "enabled": true,
-    "order": 8,
+    "order": 41,
     "createdAt": "2026-07-20T00:00:00.000Z",
-    "updatedAt": "2026-07-24T10:32:39.519Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "aab9b995-1170-4176-a8c5-2d6748caf430"
   },
   {
@@ -102,9 +102,9 @@
     "identityMode": "reinforced",
     "imageFile": "44f8037f-1d28-470f-8485-233dad561135.jpg",
     "enabled": true,
-    "order": 9,
+    "order": 33,
     "createdAt": "2026-07-21T09:25:00.592Z",
-    "updatedAt": "2026-07-24T10:32:39.479Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "4ed760a1-09f7-4274-aa0d-83a30ca389db"
   },
   {
@@ -114,9 +114,9 @@
     "identityMode": "reinforced",
     "imageFile": "dd978f7c-eb88-4aea-93dc-36355dd1bab9.jpg",
     "enabled": true,
-    "order": 10,
+    "order": 32,
     "createdAt": "2026-07-21T09:26:01.752Z",
-    "updatedAt": "2026-07-24T10:32:39.482Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "4ed760a1-09f7-4274-aa0d-83a30ca389db"
   },
   {
@@ -126,9 +126,9 @@
     "identityMode": "reinforced",
     "imageFile": "91c91c23-d680-4b38-9145-2ad5fa1d51cc.jpg",
     "enabled": true,
-    "order": 11,
+    "order": 31,
     "createdAt": "2026-07-21T09:28:14.537Z",
-    "updatedAt": "2026-07-24T10:32:39.486Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "4ed760a1-09f7-4274-aa0d-83a30ca389db"
   },
   {
@@ -138,9 +138,9 @@
     "identityMode": "reinforced",
     "imageFile": "cc07a712-adcc-4978-88c3-74d8834d2041.jpg",
     "enabled": true,
-    "order": 12,
+    "order": 30,
     "createdAt": "2026-07-21T09:29:48.256Z",
-    "updatedAt": "2026-07-24T10:32:39.489Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "4ed760a1-09f7-4274-aa0d-83a30ca389db"
   },
   {
@@ -150,9 +150,9 @@
     "identityMode": "reinforced",
     "imageFile": "733ea917-42e9-406c-993f-ff0a9763a13e.jpg",
     "enabled": true,
-    "order": 13,
+    "order": 29,
     "createdAt": "2026-07-21T13:32:35.128Z",
-    "updatedAt": "2026-07-24T10:32:39.498Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "89d3d50f-6ef4-437c-95c0-c799f8fb6440"
   },
   {
@@ -162,9 +162,9 @@
     "identityMode": "reinforced",
     "imageFile": "925bfb9a-4a95-4e22-9100-a864119f5f33.jpg",
     "enabled": true,
-    "order": 15,
+    "order": 28,
     "createdAt": "2026-07-22T02:09:26.396Z",
-    "updatedAt": "2026-07-24T10:32:39.491Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "4ed760a1-09f7-4274-aa0d-83a30ca389db"
   },
   {
@@ -174,9 +174,9 @@
     "identityMode": "reinforced",
     "imageFile": "aed7d2c6-5db1-488a-80ce-23eec38df891.jpg",
     "enabled": true,
-    "order": 16,
+    "order": 27,
     "createdAt": "2026-07-22T02:09:46.271Z",
-    "updatedAt": "2026-07-24T10:32:39.494Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "4ed760a1-09f7-4274-aa0d-83a30ca389db"
   },
   {
@@ -186,9 +186,9 @@
     "identityMode": "reinforced",
     "imageFile": "11fc5447-616c-4d42-9cef-cc1bd6fc6dc5.jpg",
     "enabled": true,
-    "order": 17,
+    "order": 26,
     "createdAt": "2026-07-22T02:10:03.520Z",
-    "updatedAt": "2026-07-24T10:15:50.416Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "4ed760a1-09f7-4274-aa0d-83a30ca389db"
   },
   {
@@ -198,9 +198,9 @@
     "identityMode": "reinforced",
     "imageFile": "5dc56299-9c68-416b-a2d8-14f6fd7fff2f.jpg",
     "enabled": true,
-    "order": 18,
+    "order": 25,
     "createdAt": "2026-07-22T02:10:18.827Z",
-    "updatedAt": "2026-07-24T10:15:50.419Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "4ed760a1-09f7-4274-aa0d-83a30ca389db"
   },
   {
@@ -210,9 +210,9 @@
     "identityMode": "reinforced",
     "imageFile": "9c0e21f5-3d28-40e8-9065-6d1ee7d98dcc.jpg",
     "enabled": true,
-    "order": 19,
+    "order": 24,
     "createdAt": "2026-07-22T02:10:33.819Z",
-    "updatedAt": "2026-07-24T10:15:50.422Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "38d3befa-39e5-47d4-bf0b-a140792b2ac3"
   },
   {
@@ -222,9 +222,9 @@
     "identityMode": "reinforced",
     "imageFile": "b22f7eae-e317-4166-b98d-ec9ab8ad8897.jpg",
     "enabled": true,
-    "order": 20,
+    "order": 23,
     "createdAt": "2026-07-22T02:10:52.719Z",
-    "updatedAt": "2026-07-24T10:32:39.501Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "89d3d50f-6ef4-437c-95c0-c799f8fb6440"
   },
   {
@@ -234,9 +234,9 @@
     "identityMode": "reinforced",
     "imageFile": "9310b2be-6885-4f28-b857-feb9c4aae574.jpg",
     "enabled": true,
-    "order": 21,
+    "order": 22,
     "createdAt": "2026-07-22T02:11:07.335Z",
-    "updatedAt": "2026-07-24T10:15:50.425Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "4ed760a1-09f7-4274-aa0d-83a30ca389db"
   },
   {
@@ -246,9 +246,9 @@
     "identityMode": "reinforced",
     "imageFile": "e17c8138-77bb-4b39-82a0-b95378804873.jpg",
     "enabled": true,
-    "order": 22,
+    "order": 21,
     "createdAt": "2026-07-22T02:11:19.838Z",
-    "updatedAt": "2026-07-24T10:32:39.503Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "89d3d50f-6ef4-437c-95c0-c799f8fb6440"
   },
   {
@@ -258,9 +258,9 @@
     "identityMode": "reinforced",
     "imageFile": "2a0eca7f-1115-458b-bd01-4886e03ef3e8.jpg",
     "enabled": true,
-    "order": 24,
+    "order": 20,
     "createdAt": "2026-07-22T02:11:46.237Z",
-    "updatedAt": "2026-07-24T10:32:39.496Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "6ad0a676-4347-4eb6-9db1-7b3938f373ae"
   },
   {
@@ -270,9 +270,9 @@
     "identityMode": "reinforced",
     "imageFile": "7569ff6f-8b96-40f5-8e46-8fc96f46e708.jpg",
     "enabled": true,
-    "order": 26,
+    "order": 19,
     "createdAt": "2026-07-24T02:02:33.799Z",
-    "updatedAt": "2026-07-24T10:15:50.428Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "38d3befa-39e5-47d4-bf0b-a140792b2ac3"
   },
   {
@@ -282,9 +282,9 @@
     "identityMode": "reinforced",
     "imageFile": "c5477126-b0d7-4591-a673-417688e2ee28.jpg",
     "enabled": true,
-    "order": 27,
+    "order": 18,
     "createdAt": "2026-07-24T02:02:33.810Z",
-    "updatedAt": "2026-07-24T10:15:50.431Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "38d3befa-39e5-47d4-bf0b-a140792b2ac3"
   },
   {
@@ -294,9 +294,9 @@
     "identityMode": "reinforced",
     "imageFile": "c2df4334-6201-4bb7-935f-e3cbba1988b8.jpg",
     "enabled": true,
-    "order": 29,
+    "order": 17,
     "createdAt": "2026-07-24T02:02:33.817Z",
-    "updatedAt": "2026-07-24T10:32:39.507Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "d7f9ac70-0439-42da-b4c2-10a929998ad8"
   },
   {
@@ -306,9 +306,9 @@
     "identityMode": "reinforced",
     "imageFile": "2220c60e-5009-4513-8ddf-130f76a6a3eb.jpg",
     "enabled": true,
-    "order": 30,
+    "order": 16,
     "createdAt": "2026-07-24T02:02:33.819Z",
-    "updatedAt": "2026-07-24T10:32:39.511Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "d1c0c307-f729-4b82-863c-76b25cb2a890"
   },
   {
@@ -318,9 +318,9 @@
     "identityMode": "reinforced",
     "imageFile": "90c05937-010b-4147-99b7-676ec3902831.jpg",
     "enabled": true,
-    "order": 31,
+    "order": 15,
     "createdAt": "2026-07-24T02:02:33.821Z",
-    "updatedAt": "2026-07-24T10:32:39.513Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "d1c0c307-f729-4b82-863c-76b25cb2a890"
   },
   {
@@ -330,9 +330,9 @@
     "identityMode": "reinforced",
     "imageFile": "30f9eba7-2f49-4b07-ad02-367b3f36f2c4.jpg",
     "enabled": true,
-    "order": 32,
+    "order": 14,
     "createdAt": "2026-07-24T02:02:33.824Z",
-    "updatedAt": "2026-07-24T10:32:39.505Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "89d3d50f-6ef4-437c-95c0-c799f8fb6440"
   },
   {
@@ -342,10 +342,10 @@
     "identityMode": "reinforced",
     "imageFile": "a573c87a-20c9-4d4a-8610-889b9c2ead4f.jpg",
     "enabled": true,
-    "order": 33,
+    "order": 13,
     "createdAt": "2026-07-24T02:02:33.826Z",
-    "updatedAt": "2026-07-24T05:35:55.752Z",
-    "categoryId": null
+    "updatedAt": "2026-07-24T11:21:43.039Z",
+    "categoryId": "aab9b995-1170-4176-a8c5-2d6748caf430"
   },
   {
     "id": "32abbc7e-c452-437d-bfab-46b469da843d",
@@ -354,9 +354,9 @@
     "identityMode": "reinforced",
     "imageFile": "2a8e5ac4-7fec-4575-9dab-16b930b8c554.jpg",
     "enabled": true,
-    "order": 34,
+    "order": 12,
     "createdAt": "2026-07-24T02:04:18.350Z",
-    "updatedAt": "2026-07-24T10:32:39.510Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "d7f9ac70-0439-42da-b4c2-10a929998ad8"
   },
   {
@@ -366,9 +366,9 @@
     "identityMode": "reinforced",
     "imageFile": "ca861360-7f35-4d14-9f15-3b1b47c3ca84.jpg",
     "enabled": true,
-    "order": 35,
+    "order": 11,
     "createdAt": "2026-07-24T02:04:18.352Z",
-    "updatedAt": "2026-07-24T10:15:50.434Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "38d3befa-39e5-47d4-bf0b-a140792b2ac3"
   },
   {
@@ -378,9 +378,177 @@
     "identityMode": "reinforced",
     "imageFile": "3579a16f-7dfc-4907-85dd-633e99003ce6.jpg",
     "enabled": true,
-    "order": 36,
+    "order": 10,
     "createdAt": "2026-07-24T02:04:18.354Z",
-    "updatedAt": "2026-07-24T10:28:09.021Z",
+    "updatedAt": "2026-07-24T11:21:43.039Z",
     "categoryId": "6ad0a676-4347-4eb6-9db1-7b3938f373ae"
+  },
+  {
+    "id": "4ab44563-0521-47e7-a9a5-d94d71c64277",
+    "title": "Layered Papercut Diorama",
+    "prompt": "Transform the person in the photo into a fantasy layered papercut diorama, a handcrafted 3D paper-art scene, keeping their pose, silhouette, and identity recognizable. Render the figure and surrounding scene as an ultra-detailed papercut illustration in soft pastel tones, with felt and cardstock textures and stacked paper layers that show visible depth. Give the person a thick white silhouette outline, like a cut-paper sticker layer, separating them from the scene behind. Build a cozy, storybook travel scene around them: decorative paper flowers, cute accessories, a blue sky background with fluffy paper clouds, and a charming miniature-town backdrop. Light it with soft daylight, a warm ambient glow, gentle shadows, and pastel highlights for a dreamy, nostalgic mood. Keep the paper texture tactile and highly detailed, like a professional papercraft diorama or a children's storybook illustration. Preserve the person's recognizable pose, silhouette, and identity throughout. Do not generate: flat vector illustration, smooth digital rendering, photorealistic skin texture, 3D CGI rendering, or loss of the person's recognizable identity.",
+    "identityMode": "reinforced",
+    "categoryId": "6ad0a676-4347-4eb6-9db1-7b3938f373ae",
+    "imageFile": "6830735d-114a-4d83-b25e-c2d6ce7fc9f9.jpg",
+    "enabled": true,
+    "order": 9,
+    "createdAt": "2026-07-27T06:51:27.035Z",
+    "updatedAt": "2026-07-27T07:20:07.545Z"
+  },
+  {
+    "id": "d10158e6-3920-41ae-a2f8-e924e18ff515",
+    "title": "Mini 3D Doll Scrapbook",
+    "prompt": "Convert this photo into a cozy scrapbook-style edit, strictly preserving the original subject's identity, pose, lighting, and background exactly as they are, do not redraw or move the person. Add several miniature 3D doll versions of the same person (matching their look and outfit) scattered around the scene, each doing a different small activity, such as reading a book, taking a photo, or waving. Render these mini dolls in a cute, glossy 3D toy style with soft rounded proportions. Overlay playful hand-drawn doodles throughout the empty areas of the frame: arrows, hearts, stars, sparkles, and short fun handwritten text. Use a pastel color palette, a white background with pink, peach, and blue accents. Keep the overall composition full and balanced, filling empty space without covering the main subject's face. The result should feel like a light aesthetic touch-up and set of cute annotations added on top of the original photo, not a full redraw of the photo itself. Preserve the original subject's recognizable identity, pose, and photo realism throughout.",
+    "identityMode": "reinforced",
+    "categoryId": "4ed760a1-09f7-4274-aa0d-83a30ca389db",
+    "imageFile": "7ed0b170-75ef-4709-9abb-ddb844a28135.jpg",
+    "enabled": true,
+    "order": 8,
+    "createdAt": "2026-07-27T06:52:34.236Z",
+    "updatedAt": "2026-07-27T07:22:47.756Z"
+  },
+  {
+    "id": "05642a60-3958-471c-b6a7-83c821ff1845",
+    "title": "Dopamine Illustration",
+    "prompt": "Transform the person in the photo into a trendy creative vector illustration, built from flowing curves and clean, minimal linework, with soft, soothing flat color blocks in a fresh, minimalist design style. Use a lively, eye-catching 'dopamine' color palette, bright and saturated but soft-toned hues. Remove all realistic textures, skin detail, and fine surface detail, rendering the person with fluid, dynamic vector linework only. Decorate the scene with loosely arranged, irregular rounded color-block shapes for a naturally soft, artistic texture. Keep the overall style fresh, modern, and full of creative energy. Use a plain solid white background so the main subject stands out clearly. Preserve the person's recognizable pose, silhouette, and general likeness, simplified into this clean vector style but still identifiable as them. Do not generate: photorealistic skin or texture, halftone dots, hand-drawn sketchy or jittery linework, 3D rendering, or complex detailed backgrounds.",
+    "identityMode": "reinforced",
+    "categoryId": "89d3d50f-6ef4-437c-95c0-c799f8fb6440",
+    "imageFile": "23e7a817-57e7-4a4e-9859-fd70a6a61034.jpg",
+    "enabled": true,
+    "order": 7,
+    "createdAt": "2026-07-27T06:53:35.701Z",
+    "updatedAt": "2026-07-27T07:24:09.822Z"
+  },
+  {
+    "id": "65805ea2-967d-4c5a-8ce2-bef6659df9ae",
+    "title": "Chibi Travel Poster",
+    "prompt": "Transform the person in the photo into a cute chibi-style miniature traveler character, placed into a travel-vlogger poster design exploring a famous world city, infer a scenic city setting that matches the photo's mood if none is obvious. Render huge, bold 3D lettering spelling out the city name, filled inside with landmark photography and cityscape views, with the cute chibi version of the person sitting around or walking between the letters. Use a cinematic travel-collage aesthetic, like a glossy travel-magazine cover, with a bright blue sky background and a lively vacation mood, in a collectible postcard style. Render the chibi character with ultra-detailed, soft-lit, playful cute-anime styling, blending realistic landmark photography with the stylized character. Add travel stamps, a passport mark, handwritten travel notes, and brush lettering reading 'TRAVELLOG'. Use a clean, modern graphic poster layout, colorful editorial design, high resolution, and a vertical composition, like a polished commercial travel poster. Give the chibi character a small backpack, camera, map, and luggage, with cute, slightly exaggerated proportions. Keep the person's face and overall look recognizable even in this simplified chibi form. Do not generate: photorealistic full-body rendering of the person, a flat single-color background, or loss of the person's recognizable identity.",
+    "identityMode": "reinforced",
+    "categoryId": "6ad0a676-4347-4eb6-9db1-7b3938f373ae",
+    "imageFile": "fdb77625-2d72-4b9e-bc72-4617e4767a97.jpg",
+    "enabled": true,
+    "order": 6,
+    "createdAt": "2026-07-27T06:54:43.032Z",
+    "updatedAt": "2026-07-27T07:25:59.786Z"
+  },
+  {
+    "id": "c134b04f-15e3-4b0b-879f-30181245dcc1",
+    "title": "Pen Sketch Notebook",
+    "prompt": "Transform the person in the photo into a bold pen-sketch illustration, using this photo as the reference. Outline the figure with confident, flowing strokes in bold red and warm yellow ink, keeping visible sketch marks and cross-hatched shading throughout. Set the figure against notebook-style paper with soft ruled lines as the background, surrounded by doodle-style decorations: hearts, arrows, stars, and handwritten lettering. Keep the overall style modern and pop-art-influenced, with an editorial sketchbook aesthetic, fashionable and expressive, rich in detail, blending flat graphic elements with realistic hand-drawn touches. Fill the frame completely, no black or empty/blank areas should appear anywhere in the image. Preserve the person's recognizable pose, facial features, and identity throughout. Do not generate: photorealistic skin texture, a plain empty background, or loss of the person's recognizable identity.",
+    "identityMode": "reinforced",
+    "categoryId": "4ed760a1-09f7-4274-aa0d-83a30ca389db",
+    "imageFile": "d21e3084-9df7-4f7f-8e66-d14f3c12ddbd.jpg",
+    "enabled": true,
+    "order": 5,
+    "createdAt": "2026-07-27T06:55:16.644Z",
+    "updatedAt": "2026-07-27T07:27:39.512Z"
+  },
+  {
+    "id": "04ad77e4-cddf-4ebc-b2a4-4a8d05425ade",
+    "title": "Rounded Chibi Sticker",
+    "prompt": "Transform the person in the photo into a die-cut vinyl sticker-style brand-mascot illustration, based on this photo as reference. Use minimalist line art with flat coloring, soft and cute chibi proportions, giving the figure a rounded, soothing character quality. Render it in a two-color flat palette: pure white fill for the main body, with an even-weight blue outline. Add a white sticker border expanding outward around the whole figure, with high contrast, no gradients, and no extra colors, kept clean and crisp. Give it a vector-illustration quality: evenly-weighted rounded outlines, flat single-color fill, no shading or texture, and smooth lines with no sharp corners. Simplify the figure into clean geometric chibi forms while keeping it recognizable as the person. Simulate the texture of a die-cut vinyl sticker, high-resolution vector quality, no noise or stray colors, with a fully consistent style throughout the image. Preserve the person's recognizable pose, hairstyle silhouette, and general likeness in this simplified chibi form. Do not generate: photorealistic texture, multiple colors beyond white and blue, gradients, shading, or loss of the person's recognizable identity.",
+    "identityMode": "reinforced",
+    "categoryId": "89d3d50f-6ef4-437c-95c0-c799f8fb6440",
+    "imageFile": "502320a5-b4fa-414a-9a0c-2bfc92e1509a.jpg",
+    "enabled": true,
+    "order": 4,
+    "createdAt": "2026-07-27T06:56:29.331Z",
+    "updatedAt": "2026-07-27T07:29:16.271Z"
+  },
+  {
+    "id": "22f79227-46ca-4c87-afb4-6bb6a679bc3b",
+    "title": "Fridge Magnet Icon",
+    "prompt": "Extract the most recognizable main subject from the photo and turn it into a simplified fridge-magnet-style icon. Keep the subject's core silhouette and signature features, with an overall clean, minimal design, giving it the look of a travel-souvenir fridge magnet. Give it a slight three-dimensional, raised feel with a soft drop shadow beneath it, clear-edged outlines paired with a light or white border stroke around the whole shape. Simplify details moderately without overworking them, keep the icon small, neat, and refined, and leave generous white space around it on a plain background. Preserve the recognizable identity, pose, and key features of the original subject throughout. Do not generate: a fully flat 2D sticker with no depth, a cluttered or busy background, or loss of the subject's recognizable identity.",
+    "identityMode": "reinforced",
+    "categoryId": "38d3befa-39e5-47d4-bf0b-a140792b2ac3",
+    "imageFile": null,
+    "enabled": true,
+    "order": 3,
+    "createdAt": "2026-07-27T06:57:30.351Z",
+    "updatedAt": "2026-07-27T06:57:30.351Z"
+  },
+  {
+    "id": "2291b1a2-9557-4c80-a7c7-ef769e90aa31",
+    "title": "Architectural Blueprint Poster",
+    "prompt": "Based on the uploaded photo of a building, create a flat, vector-style architectural illustration with the aesthetic of a data infographic. Precisely reproduce the building's overall silhouette, proportions, roof style, facade layering, and window/door layout. Remove all extraneous elements from the scene, sky, pedestrians, street greenery, and other clutter. Use pure white and light neutral tones as the base, with the building's front facade centered in the frame, following the symmetrical design logic of an architectural blueprint. Outline the form with crisp dark linework, filled with flat, even color blocks, accented with subtle light-and-shadow shading and delicate highlights, for a clean, premium, professional architectural-drafting look. Add a fitting style name in English in the upper-left corner, and layer large, semi-transparent light-gray text behind the building as an atmospheric background texture. Add dimension-marking lines appropriate to the building's scale: height values labeled along the side of tall buildings, and length/width data labeled at the base of elongated buildings, using an approximate-value marker for any unknown measurements. Add simple scale-ruler ticks to the image. Along the side, label the building's name, location, and construction date in vertical red text. Overall, the layout should suit an architecture-education poster or a professional surveying/drafting format, with neat, clean linework, a unified, understated, elegant color palette, and comfortable, premium white space.",
+    "identityMode": "none",
+    "categoryId": null,
+    "imageFile": "7a1ad157-f76e-4293-9dfa-d3a124640cb0.jpg",
+    "enabled": true,
+    "order": 2,
+    "createdAt": "2026-07-27T06:58:13.068Z",
+    "updatedAt": "2026-07-27T07:45:37.608Z"
+  },
+  {
+    "id": "de15a6d7-04a8-4268-ba3f-1fd5a0502d0f",
+    "title": "Miniature Postage Stamp",
+    "prompt": "Transform the main landmark or subject in the photo into an ultra-detailed 3D miniature travel postage-stamp diorama. Have the landmark emerge in relief from a realistic postage stamp, floating against a vibrant orange studio background, viewed from an isometric perspective, with tiny figures walking around the scene. Add fluffy floating clouds casting soft shadows, cinematic lighting, photorealistic architecture, intricate city detail, and crystal-clear water reflections where relevant. Give it a luxury travel-ad quality, like a collectible miniature world, with a tilt-shift photography look and hyperrealistic textures, in a premium travel-poster design with a travel-postcard aesthetic. Integrate clean lettering into the stamp's border, with a fitting destination name in bold modern type and a short tagline beneath it. Emphasize a sense of depth-and-scale illusion, evoking a spirit of global exploration. Render it with award-winning 3D quality: global illumination, ray tracing, ultra-sharp focus, vivid colors, and 8K masterpiece detail. Preserve the recognizable identity of the main subject or landmark from the photo.",
+    "identityMode": "none",
+    "categoryId": "38d3befa-39e5-47d4-bf0b-a140792b2ac3",
+    "imageFile": "6917bf91-3fbf-467a-a9e7-01963d0f8af3.jpg",
+    "enabled": true,
+    "order": 1,
+    "createdAt": "2026-07-27T06:59:23.597Z",
+    "updatedAt": "2026-07-27T07:43:18.158Z"
+  },
+  {
+    "id": "2e9178c0-028a-4b03-9cdf-94c521299cb4",
+    "title": "Funko Pop Figure",
+    "prompt": "Transform the person into a Funko Pop-style vinyl collectible figure, keeping their pose, hairstyle silhouette, clothing colors, and overall identity recognizable. Give the figure the characteristic oversized, slightly flattened head with simple black dot eyes and no nose or mouth detail, a small stylized body with simplified proportions, and a smooth, glossy vinyl toy material. Keep clothing and hair rendered as smooth vinyl shapes matching the original outfit's colors and silhouette. Place the figure standing on a small round plastic base. Display it inside clear plastic blister packaging on a printed cardboard backing card, with soft gradient background art, small printed text blocks and logo-style graphics (illegible or generic, not real text), styled like an authentic collectible figure box. Light it like a product photo, soft studio lighting with a subtle shadow beneath the packaging. Do not generate: a realistic human face, detailed facial features beyond simple dot eyes, a fully photographic figure, or loss of the person's recognizable identity through hairstyle, outfit, and silhouette.",
+    "identityMode": "reinforced",
+    "categoryId": "38d3befa-39e5-47d4-bf0b-a140792b2ac3",
+    "imageFile": "0a7e7a46-7530-4ee8-89c9-9a7155555d8f.jpg",
+    "enabled": true,
+    "order": 0,
+    "createdAt": "2026-07-27T07:04:28.698Z",
+    "updatedAt": "2026-07-27T07:35:06.042Z"
+  },
+  {
+    "id": "c1ed50b2-b380-44e4-be21-0ca53371319a",
+    "title": "Google Maps Pin Character",
+    "prompt": "Transform the person into a small, cute 3D character figure standing on top of a stylized map, as if they were the character brought to life from a map pin marker. Keep their pose, hairstyle silhouette, clothing colors, and overall identity recognizable, rendered in a smooth, glossy 3D toy style with soft rounded proportions. Place the figure standing at the tip of a classic teardrop-shaped map pin marker, in a bold, saturated color (red or blue), with the character emerging from or standing just above the pin's circular top. Set this on a simplified, stylized map background below, with flat-colored roads, blocks, and a few small landmark icons, similar to a clean digital map app interface. Light the scene like a clean 3D render with soft shadows beneath the pin. Keep the overall look playful, polished, and miniature. Preserve the person's recognizable identity, pose, and outfit throughout. Do not generate: a realistic photographic figure, a cluttered or overly detailed map background, or loss of the person's recognizable identity.",
+    "identityMode": "reinforced",
+    "categoryId": "38d3befa-39e5-47d4-bf0b-a140792b2ac3",
+    "imageFile": "fa8a3649-05be-43e7-956e-c2064130a2ad.jpg",
+    "enabled": true,
+    "order": -1,
+    "createdAt": "2026-07-27T07:04:28.709Z",
+    "updatedAt": "2026-07-27T07:32:23.301Z"
+  },
+  {
+    "id": "e357d177-3c0a-4d2f-9638-4bd0d6462086",
+    "title": "Cross-Stitch Pattern",
+    "prompt": "Convert the photo into a cross-stitch embroidery pattern, preserving the person's pose, facial features, hairstyle, and clothing silhouette so they remain clearly recognizable. Render the entire image as a grid of small, uniform X-shaped stitches, each a single flat color, visible individually like a charted needlepoint pattern stitched onto even-weave fabric. Use a limited, blocky color palette with hard-edged transitions between colors rather than smooth gradients, since each stitch can only hold one color. Keep the aida-cloth fabric texture visible in the background and between stitches, with a slightly frayed or looped thread texture on close inspection. Keep the overall image charmingly pixelated and handcrafted-looking, like a real finished cross-stitch piece in an embroidery hoop or frame. Preserve the person's recognizable identity, pose, and features throughout, simplified into the stitch grid. Do not generate: smooth photographic gradients, painterly shading, a fully solid-fill embroidered patch with no visible stitch grid, or loss of the person's recognizable identity.",
+    "identityMode": "reinforced",
+    "categoryId": "6ad0a676-4347-4eb6-9db1-7b3938f373ae",
+    "imageFile": "9be3a5d3-ce35-404a-be7c-ee71822e893e.jpg",
+    "enabled": true,
+    "order": -4,
+    "createdAt": "2026-07-27T07:04:28.720Z",
+    "updatedAt": "2026-07-27T07:16:07.490Z"
+  },
+  {
+    "id": "21aef128-6cb9-482d-bc3d-75f387c665c2",
+    "title": "Coin Relief Medallion",
+    "prompt": "Reimagine the person as a profile portrait minted into a classical coin or medallion, preserving their facial structure, hairstyle silhouette, and expression so they remain recognizable, adapted into a dignified side-profile bust pose typical of minted coinage. Render the entire image as a single uniform metal material, aged bronze, silver, or gold, with a raised relief surface: the portrait should appear physically embossed and three-dimensional, catching light along raised edges with darker recessed shadows in the grooves. Remove all color from skin, hair, and clothing, unifying everything into the metal's tone and patina. Add a circular coin border around the portrait, with a decorative rim design, and leave space for small ornamental engraved flourishes or laurel-leaf motifs along the edge. Light it dramatically from one side to emphasize the embossed relief texture. Preserve the person's recognizable facial profile and hairstyle silhouette throughout. Do not generate: full color, a frontal non-profile pose, photographic skin texture, or loss of the person's recognizable identity.",
+    "identityMode": "reinforced",
+    "categoryId": "38d3befa-39e5-47d4-bf0b-a140792b2ac3",
+    "imageFile": "d6e8b041-c56c-4ee0-ac01-9bd85a02e1e5.jpg",
+    "enabled": true,
+    "order": -5,
+    "createdAt": "2026-07-27T07:04:28.723Z",
+    "updatedAt": "2026-07-27T07:11:33.281Z"
+  },
+  {
+    "id": "625b916b-f4f0-4a33-b7c0-84d67b49e6cd",
+    "title": "Tarot Card Portrait",
+    "prompt": "Transform the person into an illustrated tarot card portrait, preserving their pose, facial features, hairstyle, and clothing silhouette so they remain clearly recognizable, styled as the central figure of an ornate mystical tarot card. Render the figure in a detailed, symbolic illustration style with rich jewel-toned colors, dramatic linework, and mystical symbolism woven into the composition: stars, celestial motifs, flowing drapery, and meaningful objects placed around the figure. Surround the entire image with a decorative ornate border typical of tarot cards, with symmetrical flourishes, small symbolic icons, and a fitting card title in an elegant serif or gothic-style font at the top or bottom (invent a fitting evocative title, do not use real tarot card names). Keep the lighting dramatic and atmospheric, with a sense of depth and mystery. Preserve the person's recognizable identity, pose, and expression throughout, elevated into this symbolic illustrated style. Do not generate: photorealistic texture, a plain undecorated background with no border, or loss of the person's recognizable identity.",
+    "identityMode": "reinforced",
+    "categoryId": "d7f9ac70-0439-42da-b4c2-10a929998ad8",
+    "imageFile": "56b384de-11e3-490d-a051-b6675b481942.jpg",
+    "enabled": true,
+    "order": -6,
+    "createdAt": "2026-07-27T07:04:28.726Z",
+    "updatedAt": "2026-07-27T07:08:40.999Z"
   }
 ]

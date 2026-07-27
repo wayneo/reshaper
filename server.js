@@ -469,7 +469,9 @@ async function handleAdminCreateStyle(request, response) {
     categoryId,
     imageFile,
     enabled: true,
-    order: styles.length ? Math.max(...styles.map(style => style.order)) + 1 : 0,
+    // Newly added styles default to the top of the list (lowest order sorts
+    // first), not the bottom — matches admin's expectation that "just added" shows first.
+    order: styles.length ? Math.min(...styles.map(style => style.order)) - 1 : 0,
     createdAt: now,
     updatedAt: now
   };
