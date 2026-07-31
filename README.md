@@ -11,6 +11,7 @@ Reshaper turns a photo into a restyled version of itself, an ink-line sticker, a
 - **Before/after comparison slider** on the result, drag to compare the original and restyled photo.
 - **Customize prompt** — an opt-in panel to see and edit the exact instruction sent to the model before generating, without changing what's saved for other visitors.
 - **Admin panel** (`/admin`) — add, edit, reorder, and delete styles and categories without touching code. Styles are stored in a JSON file, not a database.
+- **Bilingual (English / Traditional Chinese)** — a language toggle switches the whole UI, plus every style's title and prompt, so generation runs in the selected language end to end.
 
 ## Run locally
 
@@ -36,3 +37,7 @@ Notes:
 - Deleting a category doesn't delete the styles that used it, they just fall back to uncategorized.
 - `data/styles.json.bak` and `data/categories.json.bak` are kept as backups after every successful save; if either file ever becomes corrupted, the public site keeps working (empty style list) but admin writes are blocked until you restore from the backup.
 - `data/uploads/` holds feature images used by styles in this repo's own `data/styles.json`, if you fork this and add your own styles/images, review what you're committing.
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for what's changed release over release.
