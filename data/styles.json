@@ -550,5 +550,41 @@
     "order": -6,
     "createdAt": "2026-07-27T07:04:28.726Z",
     "updatedAt": "2026-07-27T07:08:40.999Z"
+  },
+  {
+    "id": "2e327abb-0fa1-4332-ad3d-3676f0ca28cf",
+    "title": "Cinematic Product Poster",
+    "prompt": "Using the uploaded photo as the shape reference, create a surreal, cinematic fantasy forest scene: build a giant natural archway out of towering moss-covered trees and rock walls, densely wrapped in damp vines and vivid green moss, where the overall silhouette of the archway follows the exact outline and curves of the product or subject in the uploaded photo, its contour becomes the shape of the arch, and its natural opening becomes the archway's opening at the top. Layer the inner walls of the archway with lush, richly textured stacked greenery. Through the opening of the archway, reveal a distant forest valley shrouded in soft, veil-like white mist, with faint mountains visible in soft light beyond. Light the scene with soft natural backlight streaming through from behind the archway, hazy and warm-toned, creating delicate light-and-shadow layering across the greenery that forms the silhouette, for an ethereal, serene atmosphere. Place a small black silhouetted figure on a winding stone path beneath the archway to emphasize the grand scale of the scene. Look closely at what the subject in the uploaded photo actually is, then invent a fitting brand-style title based specifically on that subject (its type, color, and character), not a generic or unrelated name, and never a real trademarked brand. Overlay this title in the center of the archway in an elegant serif font, with a smaller tagline beneath it that also fits the actual subject, blended naturally into the archway. Use a color palette of deep and vivid forest greens, paired with pale white mist and warm-toned light glow. Keep the overall style cinematic, fantastical, and natural, blended with polished commercial brand visual quality, rich in fine detail and layered depth.",
+    "identityMode": "none",
+    "categoryId": "f871e8e7-6bc6-42f6-b020-80d083a50e01",
+    "imageFile": "7fe646fe-8133-45b3-b4f5-bc6fbc312f67.jpg",
+    "enabled": true,
+    "order": -7,
+    "createdAt": "2026-07-31T02:18:30.925Z",
+    "updatedAt": "2026-07-31T02:31:23.895Z"
+  },
+  {
+    "id": "90782525-1f08-437d-993b-098955ce77cd",
+    "title": "Puffy Inflated Poster",
+    "prompt": "Create a bold event-poster design with a high-saturation bright lime-green inflated plastic packaging texture throughout: the background is a puffed-up, wrinkled bright green plastic material with a slight glossy sheen and raised, bulging surface texture, like an inflated plastic package. Render all text and graphic elements with the same puffy, inflated 3D look: thick, rounded, bulging letterforms that look like they're filled with air, with soft highlights and shadows following the rounded surface. Look closely at what the main subject in the uploaded photo actually is, then invent a fitting title and short tagline based specifically on that subject, for example, if it's a drink, name it in a way that fits its real appearance, color, and likely flavor; if it's another kind of object, base the title and tagline on what it visibly is, not a generic or unrelated name. Give the title text a bold puffy white treatment, with its edges blending slightly into the green background, paired with a secondary line of puffy black text for the subtitle, both written to match the uploaded photo's actual subject. In the center of the composition, place the product or subject from the uploaded photo, rendered in the same inflated, puffy, glossy bright-green material as the background, as if it were made of the same puffed plastic, positioned at a slight tilt as if embedded into the background. Add a short puffy white slogan or tagline beside the main subject in the same inflated 3D lettering style, written to specifically suit the subject shown in the photo. Add a line of smaller puffy white supporting text near the bottom that fits the subject's theme, not real business names, locations, or addresses. Keep the overall style bold, playful, retro-street, and slightly quirky, with every element sharing the same puffed, inflated, air-filled look. Restrict the color palette to just high-saturation bright green, white, and black, with a fully unified material texture throughout.",
+    "identityMode": "none",
+    "categoryId": "f871e8e7-6bc6-42f6-b020-80d083a50e01",
+    "imageFile": "dd420607-c5cc-48db-8461-e4353abc2520.jpg",
+    "enabled": true,
+    "order": -8,
+    "createdAt": "2026-07-31T02:20:15.524Z",
+    "updatedAt": "2026-07-31T02:26:55.718Z"
+  },
+  {
+    "id": "b3e3b69d-b152-405b-ad06-a42fcb189e47",
+    "title": "Acrylic Showcase Card",
+    "prompt": "Create a modern, minimalist 3D product-display card design, with a warm gradient background transitioning naturally from light orange to deep wine-red. At the center of the composition, place a rounded-rectangle card with a transparent acrylic texture, semi-transparent, with soft ambient reflections on its surface, showing the product or subject from the uploaded photo displayed on or through the card. Look closely at what the subject in the uploaded photo actually is, then generate a fitting brand-style title in a large white sans-serif font at the top of the card, based specifically on that subject, not a generic or unrelated name, and never a real trademarked brand. Below it, add two or three short lines of smaller white feature-highlight text that fit the subject's actual visible qualities, for example, if it's a beauty or care product, highlight fitting qualities like its finish, gentleness, or effect; if it's a different kind of item, describe fitting qualities based on what it visibly is. Add one more line of smaller white supporting text near the bottom, also tailored to the subject, not a real business name or claim. Decorate the scene with copper-gold metallic rings framing the left and right sides of the acrylic card, with scattered spheres of varying sizes around it: one large textured orange-yellow sphere, one large deep-wine-red sphere, and several smaller copper and deep-wine-red spheres. Render the whole scene in 3D with soft, natural lighting, a unified warm color tone, and a minimalist, premium, strongly modern style, with clean, detailed material rendering, the acrylic's translucency and the metal's sheen clearly visible.",
+    "identityMode": "none",
+    "categoryId": "f871e8e7-6bc6-42f6-b020-80d083a50e01",
+    "imageFile": "146f2b50-0efd-4f5f-9436-fc098878c798.jpg",
+    "enabled": true,
+    "order": -9,
+    "createdAt": "2026-07-31T02:22:29.404Z",
+    "updatedAt": "2026-07-31T02:24:59.449Z"
   }
 ]

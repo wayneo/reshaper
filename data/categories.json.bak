@@ -40,5 +40,12 @@
     "order": 5,
     "createdAt": "2026-07-24T10:32:39.467Z",
     "updatedAt": "2026-07-24T10:32:39.467Z"
+  },
+  {
+    "id": "aab9b995-1170-4176-a8c5-2d6748caf430",
+    "name": "Photo Effects",
+    "order": 6,
+    "createdAt": "2026-07-24T10:32:39.469Z",
+    "updatedAt": "2026-07-24T10:32:39.469Z"
   }
 ]
