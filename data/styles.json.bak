@@ -557,11 +557,11 @@
     "prompt": "Using the uploaded photo as the shape reference, create a surreal, cinematic fantasy forest scene: build a giant natural archway out of towering moss-covered trees and rock walls, densely wrapped in damp vines and vivid green moss, where the overall silhouette of the archway follows the exact outline and curves of the product or subject in the uploaded photo, its contour becomes the shape of the arch, and its natural opening becomes the archway's opening at the top. Layer the inner walls of the archway with lush, richly textured stacked greenery. Through the opening of the archway, reveal a distant forest valley shrouded in soft, veil-like white mist, with faint mountains visible in soft light beyond. Light the scene with soft natural backlight streaming through from behind the archway, hazy and warm-toned, creating delicate light-and-shadow layering across the greenery that forms the silhouette, for an ethereal, serene atmosphere. Place a small black silhouetted figure on a winding stone path beneath the archway to emphasize the grand scale of the scene. Look closely at what the subject in the uploaded photo actually is, then invent a fitting brand-style title based specifically on that subject (its type, color, and character), not a generic or unrelated name, and never a real trademarked brand. Overlay this title in the center of the archway in an elegant serif font, with a smaller tagline beneath it that also fits the actual subject, blended naturally into the archway. Use a color palette of deep and vivid forest greens, paired with pale white mist and warm-toned light glow. Keep the overall style cinematic, fantastical, and natural, blended with polished commercial brand visual quality, rich in fine detail and layered depth.",
     "identityMode": "none",
     "categoryId": "f871e8e7-6bc6-42f6-b020-80d083a50e01",
-    "imageFile": null,
+    "imageFile": "7fe646fe-8133-45b3-b4f5-bc6fbc312f67.jpg",
     "enabled": true,
     "order": -7,
     "createdAt": "2026-07-31T02:18:30.925Z",
-    "updatedAt": "2026-07-31T02:21:41.279Z"
+    "updatedAt": "2026-07-31T02:31:23.895Z"
   },
   {
     "id": "90782525-1f08-437d-993b-098955ce77cd",
@@ -586,5 +586,77 @@
     "order": -9,
     "createdAt": "2026-07-31T02:22:29.404Z",
     "updatedAt": "2026-07-31T02:24:59.449Z"
+  },
+  {
+    "id": "092b830c-79d8-43f2-9605-f4106ef6908f",
+    "title": "Splash Explosion",
+    "prompt": "Transform the product from the uploaded photo into a dynamic splash-explosion product shot. Freeze the product mid-action, surrounded by dramatic splashing liquid, water droplets, and condensation frozen sharply in motion around it, as if captured with a high-speed flash. Light it with dramatic rim lighting and glossy, high-contrast highlights that trace the product's edges and the liquid droplets. Set it against a clean, dark or richly colored gradient background that makes the splash and highlights pop. Add a few complementary elements relevant to the product if fitting, such as fruit slices or ingredients related to what the product visibly is, frozen in motion around it. Look closely at what the product in the uploaded photo actually is, then add a short, bold title and tagline in clean modern lettering that fits its actual character, not a generic or unrelated name, and never a real trademarked brand. Keep the overall look premium, theatrical, and high-energy, like a luxury beverage or cosmetic advertisement. Preserve the product's exact shape, proportions, and visible design throughout.",
+    "identityMode": "none",
+    "categoryId": "f871e8e7-6bc6-42f6-b020-80d083a50e01",
+    "imageFile": "c6b2a66c-36fa-4816-af98-b44ecb2591eb.jpg",
+    "enabled": true,
+    "order": -10,
+    "createdAt": "2026-07-31T02:37:20.780Z",
+    "updatedAt": "2026-07-31T02:42:42.094Z"
+  },
+  {
+    "id": "48a212d9-0b4f-46f6-9158-935c2b0716e9",
+    "title": "Black Gloss Podium",
+    "prompt": "Transform the product from the uploaded photo into a luxury advertisement hero shot. Place the product centered on a glossy black podium or pedestal, with a mirror-like reflective surface beneath it showing a clean reflection of the product. Light it with a single dramatic light source from one side, creating deep shadows, glossy highlights, and rich contrast across the product's surface. Set it against a plain dark background that fades softly into black, keeping full focus on the product itself. Look closely at what the product in the uploaded photo actually is, then add a short, elegant title and tagline in a refined, minimal font placed subtly in the frame, based specifically on that product, not a generic or unrelated name, and never a real trademarked brand. Keep the overall style premium, editorial, and high-end, like a luxury watch, perfume, or jewelry advertisement. Preserve the product's exact shape, proportions, and visible design throughout.",
+    "identityMode": "none",
+    "categoryId": "f871e8e7-6bc6-42f6-b020-80d083a50e01",
+    "imageFile": "a6becf49-3b32-4a96-aa0f-5eae243f81d8.jpg",
+    "enabled": true,
+    "order": -11,
+    "createdAt": "2026-07-31T02:37:20.795Z",
+    "updatedAt": "2026-07-31T02:44:12.137Z"
+  },
+  {
+    "id": "5ff49844-cb0b-4e0e-a44c-32dbea6a6d90",
+    "title": "Neon Night Reflection",
+    "prompt": "Transform the product from the uploaded photo into a moody night-time advertisement shot. Place the product on a dark, wet reflective surface, with its reflection visible beneath it. Light the scene with vivid neon signage glow in magenta, cyan, and electric blue, reflecting off the wet surface and the product's edges. Add a blurred, atmospheric city-night background behind the product, with soft bokeh lights and a sense of urban depth, out of focus so the product stays the clear subject. Look closely at what the product in the uploaded photo actually is, then add a short, bold title and tagline in a modern tech-style font, based specifically on that product, not a generic or unrelated name, and never a real trademarked brand. Keep the overall mood cinematic, futuristic, and high-contrast. Preserve the product's exact shape, proportions, and visible design throughout.",
+    "identityMode": "none",
+    "categoryId": "f871e8e7-6bc6-42f6-b020-80d083a50e01",
+    "imageFile": "2ea311e6-58e8-4063-9c78-1ca9f9550a08.jpg",
+    "enabled": true,
+    "order": -12,
+    "createdAt": "2026-07-31T02:37:20.798Z",
+    "updatedAt": "2026-07-31T02:45:51.805Z"
+  },
+  {
+    "id": "b2d1694a-cf8f-42b2-8aa1-32957b1ac7ff",
+    "title": "Seasonal Flat Lay",
+    "prompt": "Transform the product from the uploaded photo into an overhead seasonal flat-lay advertisement shot. Arrange the product at the center of the composition, viewed from directly above, surrounded by seasonal natural elements that fit its character, fresh flowers, leaves, or ingredients relevant to what the product visibly is, arranged loosely and naturally around it. Light the whole scene with soft, warm natural daylight, casting gentle, soft-edged shadows. Use a clean, light neutral surface as the base, like a wooden table, linen fabric, or pale stone. Look closely at what the product in the uploaded photo actually is, then add a short, warm title and tagline in a soft, natural-feeling font placed neatly in the empty space, based specifically on that product, not a generic or unrelated name, and never a real trademarked brand. Keep the overall style organic, wholesome, and lifestyle-brand-like. Preserve the product's exact shape, proportions, and visible design throughout.",
+    "identityMode": "none",
+    "categoryId": "f871e8e7-6bc6-42f6-b020-80d083a50e01",
+    "imageFile": "617244e4-1bb4-4740-9286-9434958b96bd.jpg",
+    "enabled": true,
+    "order": -13,
+    "createdAt": "2026-07-31T02:37:20.803Z",
+    "updatedAt": "2026-07-31T02:47:36.195Z"
+  },
+  {
+    "id": "83fcb7ac-e3ef-4c1b-b2bb-f7d3b8708179",
+    "title": "Billboard Campaign",
+    "prompt": "Transform the product from the uploaded photo into a realistic outdoor billboard advertisement mockup. Design a clean, bold poster ad featuring the product prominently, with the product's exact shape and design preserved, set against a simple, striking background color or gradient that complements it. Look closely at what the product in the uploaded photo actually is, then add a short, punchy title and tagline in large, bold lettering that fits its actual character, not a generic or unrelated name, and never a real trademarked brand. Then place this poster design mounted on a large billboard structure within a realistic city street scene at dusk, with soft cinematic blue-gray evening light, blurred buildings, streetlights, and a sense of real urban depth and scale around the billboard. Keep the billboard as the clear focal point, in sharp focus, with the surrounding city softly blurred. Keep the overall mood cinematic and aspirational, like a real outdoor ad campaign. Preserve the product's exact shape, proportions, and visible design throughout.",
+    "identityMode": "none",
+    "categoryId": "f871e8e7-6bc6-42f6-b020-80d083a50e01",
+    "imageFile": "ad0108b8-28b4-4552-9aa5-6f1f2667714e.jpg",
+    "enabled": true,
+    "order": -14,
+    "createdAt": "2026-07-31T02:37:20.808Z",
+    "updatedAt": "2026-07-31T02:49:28.160Z"
+  },
+  {
+    "id": "a5d17dd1-96ef-4db9-ab7e-4f5832875060",
+    "title": "Unboxing Reveal",
+    "prompt": "Transform the scene from the uploaded photo into an unboxing-moment product shot. Show the product being lifted out of or revealed from an open branded box, surrounded by soft crinkled tissue paper in a complementary color, with a ribbon or bow nearby. Include a pair of hands gently holding or lifting the product or the box lid, framed so the product remains the clear focus. Light the scene with soft, warm, natural light, like a cozy indoor moment, with a softly blurred neutral background. Look closely at what the product in the uploaded photo actually is, then style the box's exterior with a simple, fitting design and a short brand-style title based specifically on that product, not a generic or unrelated name, and never a real trademarked brand. Keep the overall mood personal, exciting, and social-media-friendly, like a genuine unboxing video moment. Preserve the product's exact shape, proportions, and visible design throughout.",
+    "identityMode": "none",
+    "categoryId": "f871e8e7-6bc6-42f6-b020-80d083a50e01",
+    "imageFile": null,
+    "enabled": true,
+    "order": -15,
+    "createdAt": "2026-07-31T02:37:20.812Z",
+    "updatedAt": "2026-07-31T02:37:20.812Z"
   }
 ]
