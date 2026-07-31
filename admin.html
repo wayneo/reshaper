@@ -65,6 +65,12 @@
         <label class="field-block">Prompt
           <textarea id="stylePromptInput" required></textarea>
         </label>
+        <label class="field-block">Title (Traditional Chinese) <span class="hint">optional — falls back to English title if blank</span>
+          <input id="styleTitleZhInput" type="text" maxlength="60">
+        </label>
+        <label class="field-block">Prompt (Traditional Chinese) <span class="hint">optional — falls back to English prompt if blank</span>
+          <textarea id="stylePromptZhInput"></textarea>
+        </label>
         <label class="field-block">Category
           <select id="styleCategorySelect">
             <option value="">None</option>
@@ -110,6 +116,7 @@
       <form class="add-category-form" id="addCategoryForm">
         <h1>Categories</h1>
         <input id="newCategoryNameInput" type="text" maxlength="60" placeholder="New category name" required>
+        <input id="newCategoryNameZhInput" type="text" maxlength="60" placeholder="Chinese name (optional)">
         <button class="btn-primary" type="submit">Add category</button>
       </form>
       <p class="form-error" id="categoryFormError" role="status"></p>
@@ -118,6 +125,7 @@
         <thead>
           <tr>
             <th>Name</th>
+            <th>Chinese name</th>
             <th>Styles</th>
             <th></th>
           </tr>

@@ -12,32 +12,33 @@
     <header>
       <a class="brand" href="/"><span class="mark"></span> Reshaper</a>
       <div class="header-actions">
-        <a class="settings-button" href="/admin">Edit Styles</a>
-        <button class="settings-button" id="settingsButton" aria-label="Open API settings">API settings&nbsp; ↗</button>
-        <button class="settings-button" id="backButton" hidden><img class="back-icon" src="images/chevron-left.png" alt="" aria-hidden="true">Back to studio</button>
+        <button class="settings-button" id="langToggleButton" type="button">中文</button>
+        <a class="settings-button" href="/admin" data-i18n="editStyles">Edit Styles</a>
+        <button class="settings-button" id="settingsButton" aria-label="Open API settings" data-i18n="apiSettings">API settings&nbsp; ↗</button>
+        <button class="settings-button" id="backButton" hidden><img class="back-icon" src="images/chevron-left.png" alt="" aria-hidden="true"><span data-i18n="backToStudio">Back to studio</span></button>
       </div>
     </header>
 
     <section class="hero page" id="createPage">
       <aside class="source-column">
-        <p class="workspace-step">01 Source</p>
+        <p class="workspace-step" data-i18n="sourceStep">01 Source</p>
         <div class="upload-row">
           <div class="selection-previews">
             <div class="upload-source">
               <label class="thumb" id="stage">
                 <span class="thumb-empty-content" id="emptyState">
                   <img class="thumb-icon" src="images/image-up.png" alt="">
-                  <span class="thumb-empty-title">Upload Photo</span>
+                  <span class="thumb-empty-title" data-i18n="uploadPhoto">Upload Photo</span>
                 </span>
                 <img id="preview" alt="Uploaded photo preview" hidden>
                 <input class="thumb-input" id="photoInput" name="photo" type="file" accept="image/png,image/jpeg,image/webp" aria-describedby="uploadHelp uploadStatus">
               </label>
-              <p class="upload-hint" id="uploadHelp">PNG, JPG, WebP<br>Max 12 MB</p>
+              <p class="upload-hint" id="uploadHelp" data-i18n-html="uploadHint">PNG, JPG, WebP<br>Max 12 MB</p>
               <p class="upload-status" id="uploadStatus" role="status"></p>
             </div>
             <div class="selected-style-preview" id="selectedStylePreview" hidden>
               <img id="selectedStylePreviewImage" alt="">
-              <span class="selected-style-caption"><b>Style</b><span id="selectedStylePreviewName"></span></span>
+              <span class="selected-style-caption"><b data-i18n="styleLabel">Style</b><span id="selectedStylePreviewName"></span></span>
             </div>
           </div>
 
@@ -45,26 +46,26 @@
       </aside>
 
       <section class="styles-column" aria-label="Choose a style">
-        <p class="workspace-step">02 Choose a Style</p>
+        <p class="workspace-step" data-i18n="chooseStyleStep">02 Choose a Style</p>
         <div class="category-filters" id="categoryFilters" role="group" aria-label="Filter styles by category" hidden></div>
         <div class="styles" id="styles" aria-live="polite"></div>
       </section>
 
       <aside class="result-column">
-        <p class="workspace-step">03 Result</p>
+        <p class="workspace-step" data-i18n="resultStep">03 Result</p>
         <div class="prompt-customize" id="promptCustomize" hidden>
-          <button class="prompt-toggle" id="promptToggleButton" type="button" aria-expanded="false">Customize prompt</button>
+          <button class="prompt-toggle" id="promptToggleButton" type="button" aria-expanded="false" data-i18n="customizePrompt">Customize prompt</button>
           <textarea class="prompt-textarea" id="promptTextarea" hidden maxlength="4000" aria-label="Style prompt (editable)"></textarea>
         </div>
         <div class="action-row">
-          <button class="generate" id="generateButton" disabled>Generate image</button>
+          <button class="generate" id="generateButton" disabled data-i18n="generateImage">Generate image</button>
         </div>
 
         <div class="studio">
           <div class="result-stage" id="resultStage">
           <div class="empty" id="resultEmpty">
-            <strong>Your result <br>appears here</strong>
-            <p>Add a photo, choose a style, then generate.</p>
+            <strong data-i18n-html="resultEmptyTitle">Your result <br>appears here</strong>
+            <p data-i18n="resultEmptyHint">Add a photo, choose a style, then generate.</p>
           </div>
           <div class="result-error" id="resultError" role="alert" hidden></div>
           <img id="resultImage" alt="AI-restyled result" hidden>
@@ -73,8 +74,8 @@
             <div class="comparison-after" id="comparisonAfter">
               <img class="comparison-image" id="comparisonAfterImage" alt="AI-restyled result">
             </div>
-            <span class="comparison-label comparison-label-before">Original</span>
-            <span class="comparison-label comparison-label-after">Generated</span>
+            <span class="comparison-label comparison-label-before" data-i18n="original">Original</span>
+            <span class="comparison-label comparison-label-after" data-i18n="generated">Generated</span>
             <span class="comparison-divider" aria-hidden="true"></span>
             <input class="comparison-range" id="comparisonRange" type="range" min="0" max="100" value="50" aria-label="Compare original and generated image">
           </div>
@@ -82,7 +83,7 @@
             <button class="icon-button" id="downloadButton" aria-label="Download generated image" title="Download"><img class="result-icon" src="images/image-down.png" alt="" aria-hidden="true"></button>
             <button class="icon-button" id="shareButton" aria-label="Share generated image" title="Share"><img class="result-icon" src="images/share-2.png" alt="" aria-hidden="true"></button>
           </div>
-          <div class="loader" id="loader" role="status" aria-live="polite"><div><div class="loader-ring"></div><span>Reshaping your moment…</span><small>Usually under a minute</small></div></div>
+          <div class="loader" id="loader" role="status" aria-live="polite"><div><div class="loader-ring"></div><span data-i18n="loaderTitle">Reshaping your moment…</span><small data-i18n="loaderHint">Usually under a minute</small></div></div>
           </div>
         </div>
       </aside>
@@ -90,29 +91,29 @@
     <section class="settings-page page" id="settingsPage" hidden>
       <div class="settings-hero">
         <div class="settings-copy">
-          <h2>Connect your creative engine.</h2>
-          <p>Bring your own Gemini or OpenAI API key. You remain responsible for usage and charges billed by the provider.</p>
-          <div class="security-note"><strong>Privacy note</strong><br>This testing build stores keys in this tab's browser session so they survive reloads. Keys are forwarded through the local backend, never written to disk, and cleared when the browser session ends.</div>
+          <h2 data-i18n="connectEngine">Connect your creative engine.</h2>
+          <p data-i18n="byokDescription">Bring your own Gemini or OpenAI API key. You remain responsible for usage and charges billed by the provider.</p>
+          <div class="security-note"><strong data-i18n="privacyNoteTitle">Privacy note</strong><br><span data-i18n="privacyNoteBody">This testing build stores keys in this tab's browser session so they survive reloads. Keys are forwarded through the local backend, never written to disk, and cleared when the browser session ends.</span></div>
         </div>
         <form class="settings-panel" id="apiForm">
-          <div class="panel-title"><h3>Model connection</h3><span class="status" id="connectionStatus">Not connected</span></div>
+          <div class="panel-title"><h3 data-i18n="modelConnection">Model connection</h3><span class="status" id="connectionStatus" data-i18n="notConnected">Not connected</span></div>
           <div class="providers" id="providers">
-            <button class="provider active" type="button" data-provider="Gemini"><strong>Gemini</strong><small>Nano Banana image models</small></button>
-            <button class="provider" type="button" data-provider="OpenAI"><strong>OpenAI</strong><small>GPT Image models</small></button>
+            <button class="provider active" type="button" data-provider="Gemini"><strong>Gemini</strong><small data-i18n="geminiDesc">Nano Banana image models</small></button>
+            <button class="provider" type="button" data-provider="OpenAI"><strong>OpenAI</strong><small data-i18n="openaiDesc">GPT Image models</small></button>
           </div>
-          <label class="field">Image model
+          <label class="field"><span data-i18n="imageModel">Image model</span>
             <select id="modelSelect" aria-label="Image generation model"></select>
             <span class="help" id="modelHelp"></span>
           </label>
-          <label class="field">Image quality
+          <label class="field"><span data-i18n="imageQuality">Image quality</span>
             <select id="qualitySelect" aria-label="Image quality"></select>
             <span class="help" id="qualityHelp"></span>
           </label>
-          <label class="field"><span id="keyLabel">Gemini API key</span>
-            <div class="field-wrap"><input id="apiKey" type="password" placeholder="AIza…" autocomplete="off" required><button class="reveal" id="revealKey" type="button">Show</button></div>
-            <span class="help">Your key is never included in exported images or analytics.</span>
+          <label class="field"><span id="keyLabel" data-i18n="geminiApiKey">Gemini API key</span>
+            <div class="field-wrap"><input id="apiKey" type="password" placeholder="AIza…" autocomplete="off" required><button class="reveal" id="revealKey" type="button" data-i18n="show">Show</button></div>
+            <span class="help" data-i18n="keyPrivacyNote">Your key is never included in exported images or analytics.</span>
           </label>
-          <div class="settings-actions"><button class="test" id="testButton" type="button">Test connection</button><button class="save" type="submit">Save settings</button></div>
+          <div class="settings-actions"><button class="test" id="testButton" type="button" data-i18n="testConnection">Test connection</button><button class="save" type="submit" data-i18n="saveSettings">Save settings</button></div>
         </form>
       </div>
     </section>

@@ -11,6 +11,8 @@ const styleFormError = document.querySelector('#styleFormError');
 const styleFormSuccess = document.querySelector('#styleFormSuccess');
 const styleTitleInput = document.querySelector('#styleTitleInput');
 const stylePromptInput = document.querySelector('#stylePromptInput');
+const styleTitleZhInput = document.querySelector('#styleTitleZhInput');
+const stylePromptZhInput = document.querySelector('#stylePromptZhInput');
 const styleCategorySelect = document.querySelector('#styleCategorySelect');
 const styleIdentitySelect = document.querySelector('#styleIdentitySelect');
 const styleImageInput = document.querySelector('#styleImageInput');
@@ -23,6 +25,7 @@ const categoryTableBody = document.querySelector('#categoryTableBody');
 const categoryListStatus = document.querySelector('#categoryListStatus');
 const addCategoryForm = document.querySelector('#addCategoryForm');
 const newCategoryNameInput = document.querySelector('#newCategoryNameInput');
+const newCategoryNameZhInput = document.querySelector('#newCategoryNameZhInput');
 const categoryFormError = document.querySelector('#categoryFormError');
 
 let editingStyleId = null;
@@ -89,6 +92,8 @@ function resetStyleForm() {
   styleFormTitle.textContent = 'Add style';
   styleTitleInput.value = '';
   stylePromptInput.value = '';
+  styleTitleZhInput.value = '';
+  stylePromptZhInput.value = '';
   styleCategorySelect.value = '';
   styleIdentitySelect.value = 'reinforced';
   styleImageInput.value = '';
@@ -117,6 +122,8 @@ async function openStyleForm(style) {
     styleFormTitle.textContent = `Edit ${style.title}`;
     styleTitleInput.value = style.title;
     stylePromptInput.value = style.prompt;
+    styleTitleZhInput.value = style.titleZh || '';
+    stylePromptZhInput.value = style.promptZh || '';
     styleIdentitySelect.value = style.identityMode;
     if (style.imageUrl) {
       styleImagePreview.src = style.imageUrl;
@@ -262,6 +269,9 @@ function renderCategories(categories) {
     const nameCell = document.createElement('td');
     nameCell.textContent = category.name;
 
+    const nameZhCell = document.createElement('td');
+    nameZhCell.textContent = category.nameZh || 'None';
+
     const countCell = document.createElement('td');
     countCell.textContent = String(category.styleCount);
 
@@ -271,7 +281,7 @@ function renderCategories(categories) {
     const renameBtn = document.createElement('button');
     renameBtn.type = 'button';
     renameBtn.textContent = 'Rename';
-    renameBtn.addEventListener('click', () => renameCategory(category.id, category.name));
+    renameBtn.addEventListener('click', () => renameCategory(category.id, category.name, category.nameZh || ''));
     const deleteBtn = document.createElement('button');
     deleteBtn.type = 'button';
     deleteBtn.className = 'delete-button';
@@ -287,7 +297,7 @@ function renderCategories(categories) {
     actions.append(renameBtn, deleteBtn);
     actionsCell.appendChild(actions);
 
-    row.append(nameCell, countCell, actionsCell);
+    row.append(nameCell, nameZhCell, countCell, actionsCell);
     return row;
   }));
 }
@@ -304,10 +314,11 @@ addCategoryForm.addEventListener('submit', async event => {
   categoryFormError.textContent = '';
   const name = newCategoryNameInput.value.trim();
   if (!name) return;
+  const nameZh = newCategoryNameZhInput.value.trim();
   const response = await fetch('/admin/api/categories', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ name })
+    body: JSON.stringify({ name, nameZh })
   });
   const payload = await response.json().catch(() => ({}));
   if (!response.ok) {
@@ -315,18 +326,23 @@ addCategoryForm.addEventListener('submit', async event => {
     return;
   }
   newCategoryNameInput.value = '';
+  newCategoryNameZhInput.value = '';
   loadCategories();
 });
 
-async function renameCategory(id, currentName) {
+async function renameCategory(id, currentName, currentNameZh) {
   const name = prompt('Rename category', currentName);
   if (name === null) return;
   const trimmed = name.trim();
-  if (!trimmed || trimmed === currentName) return;
+  if (!trimmed) return;
+  const nameZhInput = prompt('Chinese name (optional, leave blank for none)', currentNameZh);
+  if (nameZhInput === null) return;
+  const nameZh = nameZhInput.trim();
+  if (trimmed === currentName && nameZh === currentNameZh) return;
   const response = await fetch(`/admin/api/categories/${encodeURIComponent(id)}`, {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ name: trimmed })
+    body: JSON.stringify({ name: trimmed, nameZh })
   });
   if (!response.ok) {
     const payload = await response.json().catch(() => ({}));
@@ -377,6 +393,8 @@ styleForm.addEventListener('submit', async event => {
   const body = {
     title: styleTitleInput.value.trim(),
     prompt: stylePromptInput.value.trim(),
+    titleZh: styleTitleZhInput.value.trim(),
+    promptZh: stylePromptZhInput.value.trim(),
     categoryId: styleCategorySelect.value || null,
     identityMode: styleIdentitySelect.value
   };

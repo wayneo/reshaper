@@ -8,8 +8,10 @@
     "enabled": true,
     "order": 34,
     "createdAt": "2026-07-20T00:00:00.000Z",
-    "updatedAt": "2026-07-24T11:21:43.039Z",
-    "categoryId": "4ed760a1-09f7-4274-aa0d-83a30ca389db"
+    "updatedAt": "2026-07-31T03:10:28.363Z",
+    "categoryId": "4ed760a1-09f7-4274-aa0d-83a30ca389db",
+    "titleZh": "墨線貼紙",
+    "promptZh": "完全保留原始真實場景、光線、構圖、背景與環境質感，不進行風格化或替換。僅將圖像中的人物轉變為乾淨、簡約的黑白日式插畫風格墨線貼紙人物。"
   },
   {
     "id": "food-in-motion",

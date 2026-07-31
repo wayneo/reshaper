@@ -653,10 +653,10 @@
     "prompt": "Transform the scene from the uploaded photo into an unboxing-moment product shot. Show the product being lifted out of or revealed from an open branded box, surrounded by soft crinkled tissue paper in a complementary color, with a ribbon or bow nearby. Include a pair of hands gently holding or lifting the product or the box lid, framed so the product remains the clear focus. Light the scene with soft, warm, natural light, like a cozy indoor moment, with a softly blurred neutral background. Look closely at what the product in the uploaded photo actually is, then style the box's exterior with a simple, fitting design and a short brand-style title based specifically on that product, not a generic or unrelated name, and never a real trademarked brand. Keep the overall mood personal, exciting, and social-media-friendly, like a genuine unboxing video moment. Preserve the product's exact shape, proportions, and visible design throughout.",
     "identityMode": "none",
     "categoryId": "f871e8e7-6bc6-42f6-b020-80d083a50e01",
-    "imageFile": null,
+    "imageFile": "4f4f3ef5-e823-4c65-83b5-35288f567729.jpg",
     "enabled": true,
     "order": -15,
     "createdAt": "2026-07-31T02:37:20.812Z",
-    "updatedAt": "2026-07-31T02:37:20.812Z"
+    "updatedAt": "2026-07-31T02:51:36.558Z"
   }
 ]

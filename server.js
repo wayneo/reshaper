@@ -271,10 +271,12 @@ function saveCategories(records) {
   });
 }
 
-function categoryNameById(categories, categoryId) {
+function categoryNameById(categories, categoryId, lang) {
   if (!categoryId) return '';
   const found = (categories || []).find(category => category.id === categoryId);
-  return found ? found.name : '';
+  if (!found) return '';
+  if (lang === 'zh') return found.nameZh || found.name;
+  return found.name;
 }
 
 function resolveStyleForGenerate(styleId) {
@@ -288,15 +290,25 @@ function resolveStyleForGenerate(styleId) {
 
 const MAX_CUSTOM_PROMPT_CHARS = 4000;
 
-function buildGenerationPrompt(styleRecord, promptOverride) {
-  const record = promptOverride ? { ...styleRecord, prompt: promptOverride } : styleRecord;
-  if (record.identityMode === 'none') {
-    return `${record.prompt} Do not add stray text, logos, or watermarks beyond what is described above.`;
+const IDENTITY_SUFFIXES = {
+  en: {
+    none: 'Do not add stray text, logos, or watermarks beyond what is described above.',
+    reinforced: 'Above all, the rendered face must remain instantly recognizable as the exact same individual from the source photo — match their true bone structure, eye shape and spacing, nose and lip shape, eyebrow shape, and skin tone before applying any stylization. Do not invent a different-looking person. Do not add stray text, logos, or watermarks beyond what is described above.',
+    generic: 'Preserve the identity, pose, important facial features, subject count, and recognizable composition of the supplied photo. Do not add words, logos, watermarks, or extra people.'
+  },
+  zh: {
+    none: '不要添加除上述内容之外的多余文字、标志或水印。',
+    reinforced: '最重要的是，生成的面部必须让人一眼就能认出与原照片中是同一个人——在进行任何风格化处理之前，需先匹配其真实的骨骼结构、眼形与眼距、鼻唇形状、眉形以及肤色。不要生成成另一个长相不同的人。不要添加除上述内容之外的多余文字、标志或水印。',
+    generic: '保留原照片中的身份特征、姿势、重要面部特征、人物数量以及可识别的构图。不要添加文字、标志、水印或多余的人物。'
   }
-  if (record.identityMode === 'reinforced') {
-    return `${record.prompt} Above all, the rendered face must remain instantly recognizable as the exact same individual from the source photo — match their true bone structure, eye shape and spacing, nose and lip shape, eyebrow shape, and skin tone before applying any stylization. Do not invent a different-looking person. Do not add stray text, logos, or watermarks beyond what is described above.`;
-  }
-  return `${record.prompt} Preserve the identity, pose, important facial features, subject count, and recognizable composition of the supplied photo. Do not add words, logos, watermarks, or extra people.`;
+};
+
+function buildGenerationPrompt(styleRecord, promptOverride, lang) {
+  const useZh = lang === 'zh';
+  const basePrompt = promptOverride || (useZh && styleRecord.promptZh ? styleRecord.promptZh : styleRecord.prompt);
+  const suffixes = IDENTITY_SUFFIXES[useZh ? 'zh' : 'en'];
+  const suffix = suffixes[styleRecord.identityMode] || suffixes.generic;
+  return `${basePrompt} ${suffix}`;
 }
 
 function safeUploadPath(filename) {
@@ -359,7 +371,8 @@ async function handleApi(request, response) {
         try { customPrompt = decodeURIComponent(String(rawCustomPrompt)).trim().slice(0, MAX_CUSTOM_PROMPT_CHARS); }
         catch { customPrompt = ''; }
       }
-      const prompt = buildGenerationPrompt(styleRecord, customPrompt || undefined);
+      const lang = request.headers['x-reshaper-lang'] === 'zh' ? 'zh' : 'en';
+      const prompt = buildGenerationPrompt(styleRecord, customPrompt || undefined, lang);
       const aspectRatio = closestGeminiRatio(safeAspectRatio);
       const requestedQuality = String(request.headers['x-reshaper-quality'] || '');
       const allowedGeminiSizes = GEMINI_IMAGE_SIZES_BY_MODEL[model] || GEMINI_IMAGE_SIZES_BY_MODEL['gemini-3.1-flash-image'];
@@ -377,7 +390,7 @@ async function handleApi(request, response) {
   }
 }
 
-function handlePublicStyles(response) {
+function handlePublicStyles(response, lang) {
   const styles = loadStyles();
   const categories = loadCategories() || [];
   const list = (styles || [])
@@ -385,9 +398,9 @@ function handlePublicStyles(response) {
     .sort((a, b) => a.order - b.order)
     .map(style => ({
       id: style.id,
-      title: style.title,
+      title: lang === 'zh' && style.titleZh ? style.titleZh : style.title,
       imageUrl: style.imageFile ? `/uploads/${style.imageFile}` : null,
-      category: categoryNameById(categories, style.categoryId)
+      category: categoryNameById(categories, style.categoryId, lang)
     }));
   sendJson(response, 200, list);
 }
@@ -408,12 +421,13 @@ function validateCategoryId(categories, categoryId, fallback) {
 // Opt-in only: a visitor must explicitly open "Customize prompt" in the UI
 // before this is ever called. Prompt text is otherwise never sent to the
 // public page (see handlePublicStyles above).
-function handlePublicStylePrompt(response, id) {
+function handlePublicStylePrompt(response, id, lang) {
   const styles = loadStyles();
   if (!styles) return sendJson(response, 500, { error: 'Styles are temporarily unavailable.' });
   const style = styles.find(item => item.id === id && item.enabled);
   if (!style) return sendJson(response, 404, { error: 'Style not found.' });
-  sendJson(response, 200, { prompt: style.prompt });
+  const prompt = lang === 'zh' && style.promptZh ? style.promptZh : style.prompt;
+  sendJson(response, 200, { prompt });
 }
 
 async function handleUploadFile(filename, response) {
@@ -450,6 +464,8 @@ async function handleAdminCreateStyle(request, response) {
   const prompt = String(payload.prompt || '').trim();
   if (!prompt) return sendJson(response, 400, { error: 'Prompt is required.' });
   const identityMode = validateIdentityMode(payload.identityMode, 'reinforced');
+  const titleZh = payload.titleZh !== undefined ? String(payload.titleZh).trim() : '';
+  const promptZh = payload.promptZh !== undefined ? String(payload.promptZh).trim() : '';
   const categories = loadCategories();
   if (!categories) return sendJson(response, 500, { error: 'categories.json is corrupted. Restore data/categories.json.bak.' });
   const categoryId = validateCategoryId(categories, payload.categoryId, null);
@@ -465,6 +481,8 @@ async function handleAdminCreateStyle(request, response) {
     id: crypto.randomUUID(),
     title,
     prompt,
+    titleZh,
+    promptZh,
     identityMode,
     categoryId,
     imageFile,
@@ -493,6 +511,8 @@ async function handleAdminUpdateStyle(request, response, id) {
   const prompt = payload.prompt !== undefined ? String(payload.prompt).trim() : existing.prompt;
   if (!prompt) return sendJson(response, 400, { error: 'Prompt is required.' });
   const identityMode = validateIdentityMode(payload.identityMode, existing.identityMode);
+  const titleZh = payload.titleZh !== undefined ? String(payload.titleZh).trim() : (existing.titleZh || '');
+  const promptZh = payload.promptZh !== undefined ? String(payload.promptZh).trim() : (existing.promptZh || '');
   const categories = loadCategories();
   if (!categories) return sendJson(response, 500, { error: 'categories.json is corrupted. Restore data/categories.json.bak.' });
   const categoryId = validateCategoryId(categories, payload.categoryId, existing.categoryId || null);
@@ -505,7 +525,7 @@ async function handleAdminUpdateStyle(request, response, id) {
     deleteStyleImage(existing.imageFile);
   }
 
-  const updated = { ...existing, title, prompt, identityMode, categoryId, enabled, order, imageFile, updatedAt: new Date().toISOString() };
+  const updated = { ...existing, title, prompt, titleZh, promptZh, identityMode, categoryId, enabled, order, imageFile, updatedAt: new Date().toISOString() };
   styles[index] = updated;
   await saveStyles(styles);
   sendJson(response, 200, updated);
@@ -564,10 +584,12 @@ async function handleAdminCreateCategory(request, response) {
     return sendJson(response, 400, { error: 'A category with this name already exists.' });
   }
 
+  const nameZh = normalizeCategoryName(payload.nameZh);
   const now = new Date().toISOString();
   const record = {
     id: crypto.randomUUID(),
     name,
+    nameZh,
     order: categories.length ? Math.max(...categories.map(category => category.order)) + 1 : 0,
     createdAt: now,
     updatedAt: now
@@ -590,7 +612,8 @@ async function handleAdminRenameCategory(request, response, id) {
     return sendJson(response, 400, { error: 'A category with this name already exists.' });
   }
 
-  const updated = { ...categories[index], name, updatedAt: new Date().toISOString() };
+  const nameZh = payload.nameZh !== undefined ? normalizeCategoryName(payload.nameZh) : (categories[index].nameZh || '');
+  const updated = { ...categories[index], name, nameZh, updatedAt: new Date().toISOString() };
   categories[index] = updated;
   await saveCategories(categories);
   sendJson(response, 200, updated);
@@ -697,19 +720,20 @@ function serveStaticFile(request, response, file, type, cache = 'public, max-age
 }
 
 const server = http.createServer(async (request, response) => {
-  const { pathname } = new URL(request.url, 'http://internal');
+  const { pathname, searchParams } = new URL(request.url, 'http://internal');
+  const lang = searchParams.get('lang') === 'zh' ? 'zh' : 'en';
 
   if (request.method === 'POST' && pathname.startsWith('/api/')) {
     return handleApi(request, response);
   }
 
   if (request.method === 'GET' && pathname === '/api/styles') {
-    return handlePublicStyles(response);
+    return handlePublicStyles(response, lang);
   }
 
   const publicPromptMatch = pathname.match(/^\/api\/styles\/([^/]+)\/prompt$/);
   if (request.method === 'GET' && publicPromptMatch) {
-    return handlePublicStylePrompt(response, decodeURIComponent(publicPromptMatch[1]));
+    return handlePublicStylePrompt(response, decodeURIComponent(publicPromptMatch[1]), lang);
   }
 
   if (request.method === 'GET' && pathname.startsWith('/uploads/')) {
